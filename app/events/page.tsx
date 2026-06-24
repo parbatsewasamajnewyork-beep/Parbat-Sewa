@@ -34,6 +34,8 @@ const fallbackEvents = [
 ];
 
 const ongoing = [
+    { title: 'Annual Blood Donation Drive',body : "", slug: '/events', badge: 'HEALTH', theme: 'red' as const,
+    meta: ['Broadway Commons, Long Island', '115+ units · 2024–25'],}
 
 ];
 
@@ -43,6 +45,7 @@ const fallbackFeatured = {
   description: 'Our membership gathers to elect new leadership and chart the road ahead.',
   dateLabel: 'Sun, June 14, 2026 · 12 PM',
   location: 'Himalayan Meet & Spices, Long Island',
+  slug : "",
   imageUrl: undefined as string | undefined,
 };
 
@@ -92,8 +95,7 @@ const featured = sanityFeatured
       imageUrl: featuredImageUrl,
     }
   : fallbackFeatured;
-  console.log(featured);
-  console.log(events)
+
 
   return (
     <>
