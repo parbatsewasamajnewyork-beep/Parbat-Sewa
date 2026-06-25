@@ -192,7 +192,8 @@ const featured = sanityFeatured
         <CTABand
           kicker="Want to get involved?"
           text="Volunteer at our next blood drive, perform with the bhajan team, or support a relief campaign. Every hand helps."
-          primaryLabel="VOLUNTEER"
+          primaryLabel="Volunteer"
+          primaryHref='/contact'
           secondaryLabel="ABOUT US"
           secondaryHref="/about"
         />

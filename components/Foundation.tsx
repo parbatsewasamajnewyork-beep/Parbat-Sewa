@@ -51,7 +51,6 @@ export default function LeadershipMessages() {
           
           {/* Image Placeholder 2 */}
           <div className="mb-8 flex h-32 w-32 shrink-0 items-center justify-center overflow-hidden rounded-full border-4 border-white/5 bg-white/10 md:h-40 md:w-40">
-            <span className="text-xs text-muted">Image Here</span>
         <Image alt="Surya " height={200} width={200} src={"/surya.jpg"}/>
 
           </div>
