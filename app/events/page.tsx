@@ -33,11 +33,7 @@ const fallbackEvents = [
     desc: 'Fielding Parbat A & B teams in the inaugural cup, with Parbat A taking home the championship.' },
 ];
 
-const ongoing = [
-    { title: 'Annual Blood Donation Drive',body : "", slug: '/events', badge: 'HEALTH', theme: 'red' as const,
-    meta: ['Broadway Commons, Long Island', '115+ units · 2024–25'],}
 
-];
 
 // Default banner content when no featured event is set in Sanity.
 const fallbackFeatured = {
@@ -192,20 +188,6 @@ const featured = sanityFeatured
           </div>
         </section>
 
-        {/* ONGOING */}
-        <section className="px-[6%] pb-[90px] pt-[60px]">
-          <Reveal className="rounded-[14px] border border-white/5 bg-[#15151a] p-[46px]">
-            <p className="mb-6 block text-xs font-semibold tracking-[3px] text-red-soft">ONGOING SOLIDARITY</p>
-            <div className="grid grid-cols-3 gap-8 max-[860px]:grid-cols-1 max-[860px]:gap-6">
-              {ongoing.map((o) => (
-                <div key={o.title}>
-                  <h3 className="mb-2.5 font-serif text-[18px] font-bold">{o.title}</h3>
-                  <p className="text-[13.5px] leading-[1.7] text-muted">{o.body}</p>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-        </section>
 
         <CTABand
           kicker="Want to get involved?"

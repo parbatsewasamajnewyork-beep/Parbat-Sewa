@@ -3,8 +3,7 @@ import Link from 'next/link';
 const navItems = [
   { label: 'About Us', href: '/about' },
   { label: 'Our Events', href: '/events' },
-  { label: 'Impact Stories', href: '/events' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact', href: '/contact' },
 ];
 const legal = [
   { label: 'Privacy', href: '#privacy' },
@@ -46,18 +45,18 @@ export default function Footer() {
         <div>
           <h4 className="mb-5 text-xs font-semibold tracking-[2px] text-white">CONNECT</h4>
           <div className="flex gap-3">
-            <a href="#" aria-label="Website" className={socialBox}>
+            <a href="/contact" aria-label="Website" className={socialBox}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="12" cy="12" r="10" />
                 <path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z" />
               </svg>
             </a>
-            <a href="#" aria-label="Facebook" className={socialBox}>
+            <a href="https://www.facebook.com/parvata.seva.samaja.n.yuyorka" aria-label="Facebook" className={socialBox}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
-            <a href="#" aria-label="Email" className={socialBox}>
+            <a href="/contact" aria-label="Email" className={socialBox}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="2" y="4" width="20" height="16" rx="2" />
                 <path d="M22 7l-10 6L2 7" />

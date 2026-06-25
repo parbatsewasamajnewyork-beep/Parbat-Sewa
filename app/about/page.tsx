@@ -26,16 +26,31 @@ const pillars = [
     body: 'Representing Parbat across the NY metro and partnering with fellow Nepali organizations year-round.' },
 ];
 
-// 2024–2026 executive committee (office bearers)
+// 2026–2028 executive committee
 const team = [
-  { name: 'Surya Poudel', role: 'President' },
-  { name: 'Narbahadur GC', role: 'Senior Vice President' },
-  { name: 'Pravin Giri', role: 'Vice President' },
-  { name: 'Indu Thapa', role: "Women's Vice President" },
+  { name: 'Purna Shrestha', role: 'President' },
+  { name: 'Arjun Lamichhane', role: 'Senior Vice President' },
+  { name: 'Kishor Lamichhane', role: 'Vice President' },
+  { name: 'Puspa Regmi', role: 'Women Vice President' },
   { name: 'Prakash Sharma', role: 'General Secretary' },
-  { name: 'Bishal Regmi', role: 'Secretary' },
-  { name: 'Kishor Lamichhane', role: 'Treasurer' },
-  { name: 'Ashok Lamichhane', role: 'Youth Coordinator' },
+  { name: 'Sabin Chhetri', role: 'Secretary' },
+  { name: 'Rajan Gurung', role: 'Treasurer' },
+  { name: 'Anu Gurung', role: 'Co-Treasurer' },
+  { name: 'Maya Giri', role: 'Women Co-ordinator' },
+  { name: 'Ramu Lamichhane', role: 'Youth Co-ordinator' },
+];
+
+// 2026–2028 board of directors
+const board = [
+  { name: 'Daya Rijal', role: 'Board of Director' },
+  { name: 'Kishor Shrestha', role: 'Board of Director' },
+  { name: 'Sudin Kumar Pariyar', role: 'Board of Director' },
+  { name: 'Youbak Shrestha', role: 'Board of Director' },
+  { name: 'Yam Prasad Rijal', role: 'Board of Director' },
+  { name: 'Prakash Chhetri', role: 'Board of Director' },
+  { name: 'Bisnu KC', role: 'Board of Director' },
+  { name: 'Nishan Paudel Chhetri', role: 'Board of Director' },
+  { name: 'Keshav Subedi', role: 'Board of Director' },
 ];
 
 function PillarIcon({ name }: { name: string }) {
@@ -146,15 +161,24 @@ export default function AboutPage() {
         {/* LEADERSHIP */}
         <section className="px-[6%] pb-24">
           <Reveal className="mb-10">
-            <p className={`${eyebrow} mb-[14px]`}>2024 – 2026 TERM</p>
+            <p className={`${eyebrow} mb-[14px]`}>2026 – 2028 TERM</p>
             <h2 className={sectionTitle}>Executive Committee</h2>
             <p className={`${muted} mt-[14px] max-w-[600px] leading-[1.7]`}>
               Elected at the first annual convention and guided by patron Baburam
               Sharma with advisors Guman Singh Gurung and Basanta Chapagain.
             </p>
           </Reveal>
-          <div className="grid grid-cols-4 gap-[22px] max-[980px]:grid-cols-2 max-[560px]:grid-cols-1">
+          <div className="grid grid-cols-4 gap-[22px] max-[980px]:grid-cols-2 max-[560px]:grid-cols-1 mb-16">
             {team.map((m) => (
+              <TeamMember key={m.name} name={m.name} role={m.role} />
+            ))}
+          </div>
+
+          <Reveal className="mb-10">
+            <h2 className={sectionTitle}>Board of Directors</h2>
+          </Reveal>
+          <div className="grid grid-cols-4 gap-[22px] max-[980px]:grid-cols-2 max-[560px]:grid-cols-1">
+            {board.map((m) => (
               <TeamMember key={m.name} name={m.name} role={m.role} />
             ))}
           </div>

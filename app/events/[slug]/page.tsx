@@ -55,8 +55,6 @@ export default async function EventPage({ params }: EventPageProps) {
     { label: 'Location', value: event.location },
     { label: 'Timeframe', value: event.timeframe },
     { label: 'Date', value: formatDate(event.date) },
-    { label: 'Theme', value: event.theme?.toUpperCase() },
-    { label: 'Featured', value: event.featured ? 'Yes' : 'No' },
   ].filter((item) => item.value);
 
   return (
@@ -93,11 +91,7 @@ export default async function EventPage({ params }: EventPageProps) {
                       {event.badge}
                     </span>
                   )}
-                  {event.theme && (
-                    <span className={`rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[1.5px] ${themeClasses[event.theme]}`}>
-                      {event.theme}
-                    </span>
-                  )}
+
                 </div>
 
                 <div>
@@ -131,10 +125,7 @@ export default async function EventPage({ params }: EventPageProps) {
                     <p className="text-base font-semibold text-white">{event.timeframe ?? 'TBD'}</p>
                     {event.date && <p className="mt-1 text-sm text-[#c3c4ca]">{formatDate(event.date)}</p>}
                   </div>
-                  <div className="rounded-[14px] bg-[#0f1014] p-5">
-                    <p className="mb-2 text-[11px] uppercase tracking-[2px] text-red-soft">Featured</p>
-                    <p className="text-base font-semibold text-white">{event.featured ? 'Yes' : 'No'}</p>
-                  </div>
+  
                 </div>
               </Reveal>
 

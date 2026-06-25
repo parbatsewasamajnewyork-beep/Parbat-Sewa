@@ -1,0 +1,2 @@
+Put web3 api in env file
+link everything to the orgs email
