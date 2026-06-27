@@ -33,7 +33,8 @@ export default function LeadershipMessages() {
             <p>{t.foundingPresident.p4}</p>
           </div>
           <div className="mt-8 w-full border-t border-white/10 pt-6">
-            <h3 className="mb-1 font-serif text-[19px] font-bold text-white">{t.foundingPresident.title}</h3>
+            <p className="mb-0.5 font-serif text-[21px] font-bold text-white">Heman Bahadur Malla</p>
+            <h3 className="mb-1 text-[13px] font-semibold text-white/70">{t.foundingPresident.title}</h3>
             <p className="text-xs font-semibold tracking-[1px] text-red-soft">{t.foundingPresident.org}</p>
           </div>
         </Reveal>
@@ -50,7 +51,8 @@ export default function LeadershipMessages() {
             <p>{t.foundingSecretary.p4}</p>
           </div>
           <div className="mt-8 w-full border-t border-white/10 pt-6">
-            <h3 className="mb-1 font-serif text-[19px] font-bold text-white">{t.foundingSecretary.title}</h3>
+            <p className="mb-0.5 font-serif text-[21px] font-bold text-white">Prakash Sharma</p>
+            <h3 className="mb-1 text-[13px] font-semibold text-white/70">{t.foundingSecretary.title}</h3>
             <p className="text-xs font-semibold tracking-[1px] text-red-soft">{t.foundingSecretary.org}</p>
           </div>
         </Reveal>
@@ -58,7 +60,7 @@ export default function LeadershipMessages() {
         {/* President 2023–2026 */}
         <Reveal className="flex flex-col items-center rounded-[10px] border border-white/5 bg-card p-[30px] text-center transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_18px_44px_rgba(0,0,0,0.42)] md:items-start md:text-left">
           <div className="mb-8 flex h-32 w-32 shrink-0 items-center justify-center overflow-hidden rounded-full border-4 border-white/5 bg-white/10 md:h-40 md:w-40">
-            <Image alt="Surya" height={200} width={200} src="/surya.jpg" />
+            <Image alt="Surya Paudel" height={200} width={200} src="/surya.jpg" />
           </div>
           <div className="space-y-4 text-[14.5px] leading-[1.75] text-muted-2 flex-grow">
             <p>{t.president2023.p1}</p>
@@ -66,7 +68,8 @@ export default function LeadershipMessages() {
             <p>{t.president2023.p3}</p>
           </div>
           <div className="mt-8 w-full border-t border-white/10 pt-6">
-            <h3 className="mb-1 font-serif text-[19px] font-bold text-white">{t.president2023.title}</h3>
+            <p className="mb-0.5 font-serif text-[21px] font-bold text-white">Surya Paudel</p>
+            <h3 className="mb-1 text-[13px] font-semibold text-white/70">{t.president2023.title}</h3>
             <p className="text-xs font-semibold tracking-[1px] text-red-soft">{t.president2023.org}</p>
           </div>
         </Reveal>
@@ -74,7 +77,7 @@ export default function LeadershipMessages() {
         {/* President 2026–2028 */}
         <Reveal className="flex flex-col items-center rounded-[10px] border border-white/5 bg-card-2 p-[30px] text-center transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_18px_44px_rgba(0,0,0,0.42)] md:items-start md:text-left">
           <div className="mb-8 flex h-32 w-32 shrink-0 items-center justify-center overflow-hidden rounded-full border-4 border-white/5 bg-white/10 md:h-40 md:w-40">
-            <Image alt="President 2026-2028" height={200} width={200} src="/purna.jpeg" />
+            <Image alt="Purna Shrestha" height={200} width={200} src="/purna.jpeg" />
           </div>
           <div className="space-y-4 text-[14.5px] leading-[1.75] text-muted-2 flex-grow">
             <p>{t.president2026.p1}</p>
@@ -83,7 +86,8 @@ export default function LeadershipMessages() {
             <p>{t.president2026.p4}</p>
           </div>
           <div className="mt-8 w-full border-t border-white/10 pt-6">
-            <h3 className="mb-1 font-serif text-[19px] font-bold text-white">{t.president2026.title}</h3>
+            <p className="mb-0.5 font-serif text-[21px] font-bold text-white">Purna Shrestha</p>
+            <h3 className="mb-1 text-[13px] font-semibold text-white/70">{t.president2026.title}</h3>
             <p className="text-xs font-semibold tracking-[1px] text-red-soft">{t.president2026.org}</p>
           </div>
         </Reveal>

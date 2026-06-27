@@ -11,28 +11,28 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import translations from '@/lib/translations';
 
 const team = [
-  { name: 'Purna Shrestha', role: 'President' },
-  { name: 'Arjun Lamichhane', role: 'Senior Vice President' },
+  { name: 'Purna Shrestha', role: 'President', photo: '/committee/president-purna-shrestha.jpeg' },
+  { name: 'Arjun Lamichhane', role: 'Senior Vice President', photo: '/committee/senior-vp-arjun-lamichhane.jpeg' },
   { name: 'Kishor Lamichhane', role: 'Vice President' },
-  { name: 'Puspa Regmi', role: 'Women Vice President' },
-  { name: 'Prakash Sharma', role: 'General Secretary' },
+  { name: 'Puspa Regmi', role: 'Women Vice President', photo: '/committee/women-vp-puspa-regmi.jpeg' },
+  { name: 'Prakash Sharma', role: 'General Secretary', photo: '/committee/general-secretary-prakash-sharma.jpeg' },
   { name: 'Sabin Chhetri', role: 'Secretary' },
-  { name: 'Rajan Gurung', role: 'Treasurer' },
-  { name: 'Anu Gurung', role: 'Co-Treasurer' },
-  { name: 'Maya Giri', role: 'Women Co-ordinator' },
-  { name: 'Ramu Lamichhane', role: 'Youth Co-ordinator' },
+  { name: 'Rajan Gurung', role: 'Treasurer', photo: '/committee/treasurer-rajan-gurung.jpeg' },
+  { name: 'Anu Gurung', role: 'Co-Treasurer', photo: '/committee/co-treasurer-anu-gurung.jpeg' },
+  { name: 'Maya Giri', role: 'Women Co-ordinator', photo: '/committee/women-coordinator-maya-giri.jpeg' },
+  { name: 'Ramu Lamichhane', role: 'Youth Co-ordinator', photo: '/committee/youth-coordinator-ramu-lamichhane.jpeg' },
 ];
 
 const board = [
-  { name: 'Daya Rijal', role: 'Board of Director' },
+  { name: 'Daya Rijal', role: 'Board of Director', photo: '/committee/director-daya-rijal.jpeg' },
   { name: 'Kishor Shrestha', role: 'Board of Director' },
-  { name: 'Sudin Kumar Pariyar', role: 'Board of Director' },
-  { name: 'Youbak Shrestha', role: 'Board of Director' },
-  { name: 'Yam Prasad Rijal', role: 'Board of Director' },
-  { name: 'Prakash Chhetri', role: 'Board of Director' },
-  { name: 'Bisnu KC', role: 'Board of Director' },
+  { name: 'Sudin Kumar Pariyar', role: 'Board of Director', photo: '/committee/director-sudin-pariyar.jpeg' },
+  { name: 'Youbak Shrestha', role: 'Board of Director', photo: '/committee/director-youbak-shrestha.jpeg' },
+  { name: 'Yam Prasad Rijal', role: 'Board of Director', photo: '/committee/director-yam-prasad-rijal.jpeg' },
+  { name: 'Prakash Chhetri', role: 'Board of Director', photo: '/committee/director-prakash-chhetri.jpeg' },
+  { name: 'Bisnu KC', role: 'Board of Director', photo: '/committee/director-bisnu-kc.jpeg' },
   { name: 'Nishan Paudel Chhetri', role: 'Board of Director' },
-  { name: 'Keshav Subedi', role: 'Board of Director' },
+  { name: 'Keshav Subedi', role: 'Board of Director', photo: '/committee/director-keshav-subedi.jpeg' },
 ];
 
 function PillarIcon({ name }: { name: string }) {
@@ -143,7 +143,7 @@ export default function AboutContent() {
           </Reveal>
           <div className="grid grid-cols-4 gap-[22px] max-[980px]:grid-cols-2 max-[560px]:grid-cols-1 mb-16">
             {team.map((m) => (
-              <TeamMember key={m.name} name={m.name} role={m.role} />
+              <TeamMember key={m.name} name={m.name} role={m.role} photo={m.photo} />
             ))}
           </div>
 
@@ -152,7 +152,7 @@ export default function AboutContent() {
           </Reveal>
           <div className="grid grid-cols-4 gap-[22px] max-[980px]:grid-cols-2 max-[560px]:grid-cols-1">
             {board.map((m) => (
-              <TeamMember key={m.name} name={m.name} role={m.role} />
+              <TeamMember key={m.name} name={m.name} role={m.role} photo={m.photo} />
             ))}
           </div>
         </section>

@@ -30,14 +30,14 @@ export default function EventCard({
       as="article"
       className="group cursor-pointer overflow-hidden rounded-xl border border-white/[0.06] bg-[#1b1b21] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_48px_rgba(0,0,0,0.5)]"
     >
-      <div className="relative h-[150px] overflow-hidden">
+      <div className="relative aspect-[4/3] overflow-hidden">
         {/* MEDIA: Sanity image if present, else themed gradient */}
         {imageUrl ? (
           <Image
             src={imageUrl}
             alt={title}
             fill
-            className="object-cover object-center transition-transform duration-[600ms] group-hover:scale-[1.07]"
+            className="object-cover object-top transition-transform duration-[600ms] group-hover:scale-[1.07]"
             sizes="(max-width: 560px) 100vw, (max-width: 860px) 50vw, 33vw"
           />
         ) : (
