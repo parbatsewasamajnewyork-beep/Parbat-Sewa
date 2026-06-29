@@ -16,6 +16,7 @@ export default function Header() {
     { label: t.events, href: '/events' },
     { label: t.lifeMembers, href: '/life-members' },
     { label: t.contact, href: '/contact' },
+    
   ];
 
   return (
