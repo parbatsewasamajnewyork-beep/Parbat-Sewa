@@ -1,6 +1,6 @@
 import { client } from './client';
 import { sanityEnabled } from '../env';
-import { eventsQuery, featuredEventQuery, eventBySlugQuery, allSlugsQuery, upcomingEventsQuery } from './queries';
+import { eventsQuery, featuredEventQuery, eventBySlugQuery, allSlugsQuery, upcomingEventsQuery, lifeMembersQuery } from './queries';
 
 export interface SanityUpcomingEvent {
   _id: string;
@@ -86,5 +86,23 @@ export async function getEventSlugs(): Promise<{ slug: string }[]> {
   } catch (err) {
     console.error('Sanity getEventSlugs failed:', err);
     return [];
+  }
+}
+
+export interface SanityLifeMember {
+  _id: string;
+  name: string;
+  photoUrl?: string;
+  memberSince?: number;
+  description?: string;
+}
+
+export async function getLifeMembers(): Promise<SanityLifeMember[] | null> {
+  if (!sanityEnabled) return null;
+  try {
+    return await client.fetch(lifeMembersQuery, {}, { next: { revalidate: 86400 } });
+  } catch (err) {
+    console.error('Sanity getLifeMembers failed:', err);
+    return null;
   }
 }

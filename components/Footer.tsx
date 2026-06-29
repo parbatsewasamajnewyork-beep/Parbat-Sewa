@@ -16,6 +16,7 @@ export default function Footer() {
   const navItems = [
     { label: t.navLinks.about, href: '/about' },
     { label: t.navLinks.events, href: '/events' },
+    { label: t.navLinks.lifeMembers, href: '/life-members' },
     { label: t.navLinks.contact, href: '/contact' },
   ];
 

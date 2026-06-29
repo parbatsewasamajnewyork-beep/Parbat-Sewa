@@ -63,3 +63,14 @@ export const allSlugsQuery = groq`
     "slug": slug.current
   }
 `;
+
+/** All life members ordered by display order, then name. */
+export const lifeMembersQuery = groq`
+  *[_type == "lifeMember"] | order(order asc, name asc) {
+    _id,
+    name,
+    "photoUrl": photo.asset->url,
+    memberSince,
+    description
+  }
+`;

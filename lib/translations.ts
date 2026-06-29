@@ -5,6 +5,7 @@ const translations = {
     nav: {
       about: 'ABOUT',
       events: 'EVENTS',
+      lifeMembers: 'LIFE MEMBERS',
       contact: 'CONTACT',
       joinCommunity: 'Join Community',
     },
@@ -23,6 +24,7 @@ const translations = {
       navLinks: {
         about: 'About Us',
         events: 'Our Events',
+        lifeMembers: 'Life Members',
         contact: 'Contact',
       },
       legal: {
@@ -189,6 +191,17 @@ const translations = {
       noEvents: 'No events yet — check back soon.',
       noPartner: 'No partner flyers yet.',
     },
+    lifeMembers: {
+      pageHero: {
+        eyebrow: 'LIFETIME MEMBERSHIP  •  EST. 2022',
+        title: 'Our',
+        accent: 'Life Members',
+        lead: 'These distinguished individuals have made a lasting commitment to the Parbat Sewa Samaj New York community by becoming lifetime members. Their dedication and generosity help sustain our mission for generations to come.',
+      },
+      heading: 'Life Members',
+      memberSince: 'Member since',
+      noMembers: 'No life members listed yet — check back soon.',
+    },
     pageHero: {
       scrollHint: 'scroll',
     },
@@ -198,6 +211,7 @@ const translations = {
     nav: {
       about: 'हाम्रो बारे',
       events: 'कार्यक्रमहरू',
+      lifeMembers: 'आजीवन सदस्यहरू',
       contact: 'सम्पर्क',
       joinCommunity: 'समुदायमा सामेल हुनुस्',
     },
@@ -216,6 +230,7 @@ const translations = {
       navLinks: {
         about: 'हाम्रो बारे',
         events: 'हाम्रा कार्यक्रमहरू',
+        lifeMembers: 'आजीवन सदस्यहरू',
         contact: 'सम्पर्क',
       },
       legal: {
@@ -381,6 +396,17 @@ const translations = {
       partnerHeading: 'साझेदार फ्लायरहरू',
       noEvents: 'अहिले कुनै कार्यक्रम छैन — छिट्टै जाँच गर्नुस्।',
       noPartner: 'अहिले कुनै साझेदार फ्लायर छैन।',
+    },
+    lifeMembers: {
+      pageHero: {
+        eyebrow: 'आजीवन सदस्यता  •  स्था. २०२२',
+        title: 'हाम्रा',
+        accent: 'आजीवन सदस्यहरू',
+        lead: 'यी विशिष्ट व्यक्तिहरूले आजीवन सदस्य भएर पर्वत सेवा समाज न्यु योर्क समुदायप्रति स्थायी प्रतिबद्धता जनाएका छन्। तिनीहरूको समर्पण र उदारताले आगामी पुस्ताका लागि हाम्रो मिसनलाई बलियो राख्न मद्दत गर्छ।',
+      },
+      heading: 'आजीवन सदस्यहरू',
+      memberSince: 'सदस्य बनेको वर्ष',
+      noMembers: 'अहिले कुनै आजीवन सदस्य सूचीबद्ध छैनन् — छिट्टै जाँच गर्नुस्।',
     },
     pageHero: {
       scrollHint: 'स्क्रोल',

@@ -11,6 +11,7 @@ import Reveal from '@/components/Reveal';
 import { useLanguage } from '@/contexts/LanguageContext';
 import translations from '@/lib/translations';
 
+// Current/Newest Committee
 const team = [
   { name: 'Purna Shrestha', role: 'President', photo: '/committee/president-purna-shrestha.jpeg' },
   { name: 'Arjun Lamichhane', role: 'Senior Vice President', photo: '/committee/senior-vp-arjun-lamichhane.jpeg' },
@@ -34,6 +35,35 @@ const board = [
   { name: 'Bisnu KC', role: 'Board of Director', photo: '/committee/director-bisnu-kc.jpeg' },
   { name: 'Nishan Paudel Chhetri', role: 'Board of Director' },
   { name: 'Keshav Subedi', role: 'Board of Director', photo: '/committee/director-keshav-subedi.jpeg' },
+];
+
+// Previous 2024-2026 Committee (Photos matched where applicable)
+const team2024 = [
+  { name: 'Surya Paudel', role: 'President', photo: '/surya.jpg'  },
+  { name: 'Nar Bahadur GC Raju', role: 'Senior Vice President' },
+  { name: 'Pravin Giri', role: 'Vice President' },
+  { name: 'Indu Thapa', role: 'Women Vice President' },
+  { name: 'Prakash Sharma', role: 'General Secretary', photo: '/committee/general-secretary-prakash-sharma.jpeg' },
+  { name: 'Bishal Regmi', role: 'Secretary' },
+  { name: 'Binod Sharma', role: 'Treasurer' },
+  { name: 'Kishor Regmi', role: 'Co-Treasurer' },
+  { name: 'Ashok Lamichhane', role: 'Youth Co-ordinator' },
+];
+
+const board2024 = [
+  { name: 'Manish Rijal', role: 'Board of Director' },
+  { name: 'Krishna KC', role: 'Board of Director' },
+  { name: 'Dhanendra Bahadur Regmi Suresh', role: 'Board of Director' },
+  { name: 'Jivan Regmi', role: 'Board of Director' },
+  { name: 'Dipak Subedi', role: 'Board of Director' },
+  { name: 'Purna Shrestha', role: 'Board of Director', photo: '/committee/president-purna-shrestha.jpeg' },
+  { name: 'Prakash Chhetri', role: 'Board of Director', photo: '/committee/director-prakash-chhetri.jpeg' },
+  { name: 'Sunil Regmi', role: 'Board of Director' },
+  { name: 'Arjun Lamichhane', role: 'Board of Director', photo: '/committee/senior-vp-arjun-lamichhane.jpeg' },
+  { name: 'Santosh Lamichhane', role: 'Board of Director' },
+  { name: 'Raju Pun', role: 'Board of Director' },
+  { name: 'Sudip Paudel', role: 'Board of Director' },
+  { name: 'Krishna Paudel', role: 'Board of Director' },
 ];
 
 function PillarIcon({ name }: { name: string }) {
@@ -94,7 +124,7 @@ export default function AboutContent() {
             <div className="absolute inset-0 bg-[repeating-linear-gradient(125deg,rgba(255,200,110,0.06)_0_2px,transparent_2px_8px)]" />
             <Image
               src="/community.jpeg"
-              alt={ 'Community photo'}
+              alt={'Community photo'}
               fill
               className="object-cover"
             />
@@ -136,7 +166,7 @@ export default function AboutContent() {
           </div>
         </section>
 
-        {/* LEADERSHIP */}
+        {/* LEADERSHIP (NEWEST) */}
         <section className="px-[6%] pb-24">
           <Reveal className="mb-10">
             <p className={`${eyebrow} mb-[14px]`}>{t.leadership.termEyebrow}</p>
@@ -156,6 +186,28 @@ export default function AboutContent() {
           </Reveal>
           <div className="grid grid-cols-4 gap-[22px] max-[980px]:grid-cols-2 max-[560px]:grid-cols-1">
             {board.map((m) => (
+              <TeamMember key={m.name} name={m.name} role={m.role} photo={m.photo} />
+            ))}
+          </div>
+        </section>
+
+        {/* LEADERSHIP 2024-2026 (OLDER) */}
+        <section className="px-[6%] pb-24">
+          <Reveal className="mb-10">
+            <p className={`${eyebrow} mb-[14px]`}>Previous Term</p>
+            <h2 className={sectionTitle}>Executive Committee 2024-2026</h2>
+          </Reveal>
+          <div className="grid grid-cols-4 gap-[22px] max-[980px]:grid-cols-2 max-[560px]:grid-cols-1 mb-16">
+            {team2024.map((m) => (
+              <TeamMember key={m.name} name={m.name} role={m.role} photo={m.photo} />
+            ))}
+          </div>
+
+          <Reveal className="mb-10">
+            <h2 className={sectionTitle}>Board of Directors 2024-2026</h2>
+          </Reveal>
+          <div className="grid grid-cols-4 gap-[22px] max-[980px]:grid-cols-2 max-[560px]:grid-cols-1">
+            {board2024.map((m) => (
               <TeamMember key={m.name} name={m.name} role={m.role} photo={m.photo} />
             ))}
           </div>
