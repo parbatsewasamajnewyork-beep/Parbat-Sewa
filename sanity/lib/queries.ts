@@ -64,9 +64,12 @@ export const allSlugsQuery = groq`
   }
 `;
 
-/** All life members ordered by display order, then name. */
+/** All life members, with photographed members first, then those without a
+ *  photo. Within each group, sort by explicit `order` (missing order values
+ *  fall back to a large sentinel so they trail numbered members) then name —
+ *  keeping the sequence stable regardless of missing/null order values. */
 export const lifeMembersQuery = groq`
-  *[_type == "lifeMember"] | order(order asc, name asc) {
+  *[_type == "lifeMember"] | order(defined(photo.asset) desc, coalesce(order, 99999) asc, name asc) {
     _id,
     name,
     "photoUrl": photo.asset->url,
