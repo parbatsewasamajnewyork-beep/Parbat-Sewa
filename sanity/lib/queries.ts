@@ -25,7 +25,7 @@ export const upcomingEventsQuery = groq`
     badge
   }
 `;
-
+//Just to stay safe 
 /** The single featured event for the "NEXT UP" banner. */
 export const featuredEventQuery = groq`
   *[_type == "event" && featured == true] | order(date desc)[0] {
